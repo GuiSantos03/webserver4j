@@ -27,7 +27,7 @@ public class HttpConnectionWorkerThread extends Thread {
      */
     @Override
     public void run() {
-        try (InputStream _ = socket.getInputStream(); OutputStream outputStream = socket.getOutputStream()) {
+        try (InputStream inputStream = socket.getInputStream(); OutputStream outputStream = socket.getOutputStream()) {
 
             File file = new File(webRoot, "index.html");
             byte[] bytes = Files.readAllBytes(file.toPath());
