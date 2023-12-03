@@ -24,6 +24,7 @@ public class Configuration {
     public static class Database {
         private String host;
         private int port;
+        private String name;
 
         public String getHost() {
             return host;
@@ -48,12 +49,11 @@ public class Configuration {
         public void setName(String name) {
             this.name = name;
         }
-
-        private String name;
     }
 
     public static class Server {
         private int port;
+        private String webRoot;
 
         public int getPort() {
             return port;
@@ -61,6 +61,14 @@ public class Configuration {
 
         public void setPort(int port) {
             this.port = port;
+        }
+
+        public String getWebRoot() {
+            return webRoot;
+        }
+
+        public void setWebRoot(String webRoot) {
+            this.webRoot = webRoot;
         }
     }
 }

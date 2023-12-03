@@ -6,6 +6,6 @@
   },
   "server": {
     "port": 8080,
-    "webRoot": ""
+    "webRoot": "src/main/java/dev/guisantos03/docs"
   }
 }
